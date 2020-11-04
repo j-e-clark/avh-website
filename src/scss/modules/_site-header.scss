@@ -1,5 +1,10 @@
 .site-header {
-  &__brand {
-    margin: 0;
+  background: $tertiaryColor; /* Old browsers */
+  background: linear-gradient($tertiaryLight, $tertiaryColor);
+
+  &__logo {
+    amp-img {
+      display: block;
+    }
   }
 }

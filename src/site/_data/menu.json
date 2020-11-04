@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Home",
+    "url": "/",
+    "highlight": false
+  },
+  {
+    "label": "Activities",
+    "url": "/activities/",
+    "highlight": false
+  },
+  {
+    "label": "For Hire",
+    "url": "/forhire/",
+    "highlight": false
+  },
+  {
+    "label": "Information",
+    "url": "/information/",
+    "highlight": false
+  },
+  {
+    "label": "Links",
+    "url": "/links/",
+    "highlight": false
+  },
+  {
+    "label": "Contacts",
+    "url": "/contact/",
+    "highlight": true
+  }
+]
