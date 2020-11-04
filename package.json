@@ -1,0 +1,21 @@
+{
+  "name": "elevent-amp-starter",
+  "version": "1.0.0",
+  "description": "Starter site using Eleventy and with amp and Sass plugins",
+  "main": "index.js",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "ENV=prod eleventy",
+    "debug": "DEBUG=Eleventy* eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "James Clark",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@ampproject/eleventy-plugin-amp": "^0.5.3",
+    "dotenv": "^8.2.0",
+    "eleventy-plugin-sass": "^1.1.1"
+  }
+}

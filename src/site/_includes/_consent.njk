@@ -1,0 +1,26 @@
+<amp-consent id="myUserConsent"
+  layout="nodisplay">
+  <script type="application/json">{
+    "consentInstanceId": "consent-id",
+    "consentRequired": true,
+    "promptUI": "consentDialog",
+    "postPromptUI": "post-consent-ui"
+  }</script>
+  <div class="popupOverlay"
+    id="consentDialog">
+    <div class="consentPopup">
+      <div class="dismiss-button"
+        role="button"
+        tabindex="0"
+        on="tap:myUserConsent.dismiss">X</div>
+      <h2>Privacy notice</h2>
+      <p>We use Google Analytics to monitor traffic to this site which provides anonymous information on browsing habits.</p>
+      <p>For the purpose of providing this data we would like to place a cookie, a small text file, on your system which helps to monitor, for example, return visits to the site.</p>
+      <button on="tap:myUserConsent.accept">Accept</button>
+      <button on="tap:myUserConsent.reject">Reject</button>
+    </div>
+  </div>
+  <div id="post-consent-ui">
+    <button on="tap:myUserConsent.prompt()">Update Consent</button>
+  </div>
+</amp-consent>

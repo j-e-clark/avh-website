@@ -1,3 +1,6 @@
+# MacOS system file
+.DS_Store
+
 # Logs
 logs
 *.log
@@ -102,3 +105,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+#Eleventy Output
+_site

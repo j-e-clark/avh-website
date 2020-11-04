@@ -1,0 +1,19 @@
+{% set gaID = analytics.gaID %}
+{% set gtmID = analytics.gtmID %}
+{% if gtmID %}
+<!-- Google Tag Manager -->
+<amp-analytics data-block-on-consent config="https://www.googletagmanager.com/amp.json?id={{ gtmID }}&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
+{% elif gaID %}
+<amp-analytics data-block-on-consent type="gtag" data-credentials="include">
+<script type="application/json">
+{
+  "vars" : {
+    "gtag_id": "{{ gaID }}",
+    "config" : {
+      "{{ gaID }}": { "groups": "default" }
+    }
+  }
+}
+</script>
+</amp-analytics>
+{% endif %}
