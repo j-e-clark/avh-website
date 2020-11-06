@@ -1,0 +1,8 @@
+<amp-sidebar id="sidebar1" layout="nodisplay" side="right">
+<button on="tap:sidebar1.close" class="close">X</button>
+  <ul>
+          {% for item in menu %}
+        <li><a href="{{item.url}}">{{item.label}}</a></li>
+        {% endfor %}
+  </ul>
+</amp-sidebar>

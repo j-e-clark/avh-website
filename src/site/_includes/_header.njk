@@ -2,12 +2,13 @@
   <div class="navbar wrapper">
     <div class="site-header__logo"><img src="img/avh-logo.png" width="80" height="80" alt="Ash Village Hall" class="site-header__logoi" /></div>
     <nav class="primary-nav">
-      <ul>
+      <ul class="primary-nav__menu">
         {% for item in menu %}
         <li><a href="{{item.url}}">{{item.label}}</a></li>
         {% endfor %}
       </ul>
     {% include '_covid.njk' %}
+    <button class="primary-nav__hamburger" on="tap:sidebar1.toggle">&#9776;</button>
     </nav>
   </div>
 </header>
