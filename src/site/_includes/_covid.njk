@@ -1,0 +1,18 @@
+{% set cvStatus = covid.covidStatus %}
+
+{% switch cvStatus %}
+  {% case "green" %}
+    <div class="covid-status" data-text="Open"><a href="/covid/"><h3>Covid Secure</h3><div class="covid-status__led-box"><div class="covid-status__led-box
+covid-status__led-box
+covid-status__led-box--led-green"></div></div></a><p>Open</p></div>
+  {% case "amber" %}
+    <div class="covid-status"  data-text="Temporarily Closed"><a href="/covid/"><h3>Covid Secure</h3><div class="covid-status__led-box"><div class="covid-status__led-box
+covid-status__led-box
+covid-status__led-box--led-amber"></div></div></a><p>Temporarily Closed</p></div>
+  {% case "red" %}
+    <div class="covid-status" data-text="Closed"><a href="/covid/"><h3>Covid Secure</h3><div class="covid-status__led-box"><div class="covid-status__led-box
+covid-status__led-box
+covid-status__led-box--led-red"></div></div></a><p>Closed</p></div>
+  {% default %}
+  <div class="covid-status"><a href="/covid/"><h3>Data unavailable</h3></div>
+{% endswitch %}

@@ -1,0 +1,77 @@
+.covid-status {
+  color: $secondaryDark;
+  background-color: $whiteColor;
+  margin: 0.5em;
+  padding: 0.25em 0.5em;
+  border-radius: 1em;
+  border: 2px solid $secondaryColor;
+  position: relative;
+  display: inline-block;
+  float: right;
+
+  h3 {
+    margin: 0;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    color: inherit;
+  }
+  p {
+    display: none;
+  }
+
+  &:before {
+    content: attr(data-text);
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(75%);
+    padding: 0.25em 1em;
+    border-radius: 1em;
+    background-color: $whiteColor;
+    border: 2px solid $secondaryColor;
+    text-align: center;
+
+    display: none;
+  }
+
+  &:hover:before {
+    display: block;
+  }
+}
+.covid-status__led-box {
+  height: 24px;
+  margin-left: 0.5em;
+}
+
+.covid-status__led-box--led-red {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: #f00;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px,
+    rgba(255, 0, 0, 0.5) 0 2px 12px;
+}
+
+.covid-status__led-box--led-amber {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: #ffbf00;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #806002 0 -1px 9px,
+    rgba(255, 191, 0, 0.5) 0 2px 12px;
+}
+
+.covid-status__led-box--led-green {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: #abff00;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px,
+    #89ff00 0 2px 12px;
+}
