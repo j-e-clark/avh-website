@@ -1,0 +1,10 @@
+.site-footer {
+  background: $tertiaryColor; /* Old browsers */
+  background: linear-gradient($tertiaryColor, $tertiaryLight);
+
+  &__text {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1em;
+  }
+}
