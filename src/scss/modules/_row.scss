@@ -1,0 +1,14 @@
+.row {
+  margin: 1em 0;
+  display: grid;
+  align-items: center;
+  font-size: 1.2rem;
+  @include atMedium {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  &__col {
+    margin: 0 auto;
+    padding: 0 2em;
+  }
+}

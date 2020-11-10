@@ -2,12 +2,15 @@
   color: $secondaryDark;
   background-color: $whiteColor;
   margin: 0.5em;
-  padding: 0.25em 0.5em;
+  padding: 0.12em 0.25em;
   border-radius: 1em;
   border: 2px solid $secondaryColor;
   position: relative;
   display: inline-block;
   float: right;
+  @include atMedium {
+    padding: 0.25em 0.5em;
+  }
 
   h3 {
     margin: 0;
