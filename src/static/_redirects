@@ -1,0 +1,15 @@
+# Redirects from what the browser requests to what we serve
+/activities.html /activities/
+/activities.php /activities/
+/contact.html /contact/
+/contact.php /contact/
+/curzon.html /curzon/
+/forhire.html /forhire/
+/forhire.php /forhire/
+/index.html /
+/index.php /
+/information.html /information/
+/information.php /information/
+links.html /links/
+links.php /links/
+privacy.html /
