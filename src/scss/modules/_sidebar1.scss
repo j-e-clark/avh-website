@@ -1,31 +1,31 @@
 #sidebar1 {
-  width: 100%;
-  background-color: $tertiaryDark;
+  background: $tertiaryDark;
   background: linear-gradient($tertiaryDark 20%, $tertiaryColor 80%);
   text-align: right;
+  width: 100%;
 
   .close {
-    font-size: 2em;
-    border: none;
     background: none;
+    border: none;
+    font-size: 2em;
     margin: 0 0.2em;
     padding: 0.5em;
   }
 
   ul {
+    background: $tertiaryColor;
+    background: linear-gradient($tertiaryLight, $tertiaryColor);
+    font-size: 1.5em;
     list-style: none;
     margin: 0;
     padding: 0;
-    font-size: 1.5em;
-    background-color: $tertiaryColor;
-    background: linear-gradient($tertiaryLight, $tertiaryColor);
   }
 
   li {
+    border-bottom: 2px solid $tertiaryDark;
     color: $secondaryDark;
     text-align: center;
     padding: 1em;
-    border-bottom: 2px solid $tertiaryDark;
 
     a {
       color: inherit;

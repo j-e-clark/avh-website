@@ -4,30 +4,30 @@
     opacity: 1;
   }
   &__headline {
-    font-size: 2em;
-    color: $primaryDark;
-    text-shadow: 2px 2px 4px white;
     bottom: 0;
-    right: 0;
-    position: absolute;
+    color: $primaryDark;
+    font-size: 2em;
     margin: 0;
     padding-bottom: 1.5em;
     padding-right: 20px;
+    position: absolute;
+    right: 0;
+    text-shadow: 2px 2px 4px white;
     @include atSmall {
       font-size: 3em;
     }
   }
   &__sub {
-    font-size: 1em;
-    color: $secondaryLight;
-    text-shadow: 2px 2px 2px black;
-    text-align: right;
     bottom: 0;
-    right: 0;
-    position: absolute;
+    color: $secondaryLight;
+    font-size: 1em;
     margin: 0;
-    padding-right: 20px;
     padding-bottom: 0.5em;
+    padding-right: 20px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    text-shadow: 2px 2px 2px black;
     @include atSmall {
       font-size: 1.5em;
       padding-bottom: 1em;
