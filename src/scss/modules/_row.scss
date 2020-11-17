@@ -8,7 +8,12 @@
   }
 
   &__col {
-    margin: 0 auto;
-    padding: 0 2em;
+    padding: 0 0.5em;
+    @include atMedium {
+      padding: 0 2em;
+    }
+  }
+  &__img {
+    margin: 0 2em;
   }
 }

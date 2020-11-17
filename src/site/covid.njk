@@ -1,0 +1,25 @@
+---
+layout: layout.njk
+pageTitle: Covid Status
+---
+<div class="page-section wrapper">
+<div class="page-section__content">
+<h1>Covid-19 Status</h1>
+{% set cvStatus = covid.covidStatus %}
+
+{% switch cvStatus %}
+  {% case "green" %}
+  <h2>Current Status: Green</h2>
+  <p>Work to make Ash Village Hall COVID Secure has been completed. Green status means the hall is once again available to hire for permitted activities with a restriction of no more than 23 people in the hall at any time. Hirers must abide by the <a href="/assets/files/AVH-COVIDSpecialConditionspackv1.pdf" target="_blank">Special Conditions of Hire during COVID-19</a>.</p>
+  <p>Note, during periods of lockdown most of the activities that take place in the hall will not be permitted activities. The hall is however available for hire for any activities that are permitted.</p>
+  {% case "amber" %}
+  <p>Work to make Ash Village Hall COVID Secure has been completed. Amber status means the hall is temporarily closed e.g. for deep cleaning. The hall will shortly be available to hire for permitted activities with a restriction of no more than 23 people in the hall at any time. Hirers must abide by the <a href="/assets/files/AVH-COVIDSpecialConditionspackv1.pdf" target="_blank">Special Conditions of Hire during COVID-19</a>.</p>
+  {% case "red" %}
+    <p>Work to make Ash Village Hall COVID Secure has been completed. Red status means we have been advised the hall must be closed until further notice.</p>
+
+  {% default %}
+  <p>Work to make Ash Village Hall COVID Secure has been completed. Covid status is currently unavailable. Please contact our booking secretaries for further information if you would like to hire the hall. Hirers must abide by the <a href="/assets/files/AVH-COVIDSpecialConditionspackv1.pdf" target="_blank">Special Conditions of Hire during COVID-19</a>.</p>
+{% endswitch %}
+
+</div>
+</div>

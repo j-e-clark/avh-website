@@ -1,6 +1,7 @@
 .covid-status {
   color: $secondaryDark;
   background-color: $whiteColor;
+  font-size: 0.8em;
   margin: 0.5em;
   padding: 0.12em 0.25em;
   border-radius: 1em;
@@ -9,6 +10,7 @@
   display: inline-block;
   float: right;
   @include atMedium {
+    font-size: 1em;
     padding: 0.25em 0.5em;
   }
 

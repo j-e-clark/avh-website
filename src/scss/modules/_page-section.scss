@@ -1,2 +1,23 @@
 .page-section {
+  h1 {
+    color: $secondaryDark;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    @include atMedium {
+      font-size: 4.5em;
+    }
+  }
+  a {
+    color: $primaryDark;
+  }
+  &__content {
+    margin: 1em 0;
+    padding: 0 0.5em;
+    align-items: center;
+    font-size: 1.2rem;
+    @include atMedium {
+      padding: 0 2em;
+    }
+  }
 }
