@@ -1,7 +1,7 @@
 {
-  "name": "elevent-amp-starter",
+  "name": "avh-website",
   "version": "1.0.0",
-  "description": "Starter site using Eleventy and with amp and Sass plugins",
+  "description": "Website for Ash Village Hall using Eleventy and with amp and Sass plugins",
   "main": "index.js",
   "scripts": {
     "dev": "eleventy --serve",
@@ -13,9 +13,9 @@
   "author": "James Clark",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^0.12.1",
     "@ampproject/eleventy-plugin-amp": "^0.5.5",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.5.1",
     "eleventy-plugin-sass": "^1.2.0"
   }
 }
