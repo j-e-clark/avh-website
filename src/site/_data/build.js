@@ -1,3 +1,7 @@
+const roman = require('romans');
+const today = new Date().getFullYear();
+
 module.exports = {
-  buildYear: new Date().getFullYear(),
+  buildYear: today,
+  buildYearRoman: roman.romanize(today),
 };
