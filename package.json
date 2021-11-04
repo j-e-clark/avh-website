@@ -16,9 +16,7 @@
     "@11ty/eleventy": "^0.12.1",
     "@ampproject/eleventy-plugin-amp": "^0.5.7",
     "dotenv": "^10.0.0",
-    "eleventy-plugin-sass": "^1.2.0"
-  },
-  "dependencies": {
+    "eleventy-plugin-sass": "^1.2.0",
     "romans": "^2.0.3"
   }
 }
