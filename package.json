@@ -4,9 +4,9 @@
   "description": "Website for Ash Village Hall using Eleventy and with amp and Sass plugins",
   "main": "index.js",
   "scripts": {
-    "dev": "eleventy --serve",
+    "dev": "gulp & npx @11ty/eleventy --serve",
     "build": "ENV=prod eleventy",
-    "debug": "DEBUG=Eleventy* eleventy",
+    "debug": "gulp build && DEBUG=Eleventy* eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,8 +15,15 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@ampproject/eleventy-plugin-amp": "^0.5.7",
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.0.9",
     "dotenv": "^10.0.0",
-    "eleventy-plugin-sass": "^1.2.0",
-    "romans": "^2.0.3"
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss": "^8.3.11",
+    "romans": "^2.0.3",
+    "sass": "^1.43.4"
   }
 }
