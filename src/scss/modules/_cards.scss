@@ -1,9 +1,28 @@
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
 .card {
-  background-color: darkblue;
+  border: solid 2px $blackColor;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  @include atSmall {
+    flex-direction: row;
+  }
+
+  &__day {
+    background-color: $secondaryDark;
+    color: $whiteColor;
+    padding: 1em;
+    text-align: center;
+  }
+
+  &__img {
+    width: 100%;
+  }
 }
