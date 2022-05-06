@@ -7,22 +7,68 @@
 .card {
   border: solid 2px $blackColor;
   border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    'card__day card__day'
+    'card__activity card__img'
+    'card__summary card__summary'
+    'card__text card__text';
   overflow: hidden;
 
-  @include atSmall {
-    flex-direction: row;
+  @include atLarge {
+    background-image: linear-gradient(
+      to right,
+      $secondaryDark,
+      $whiteColor 50%
+    );
+
+    grid-template-areas:
+      'card__day card__img card__activity card__text'
+      'card__day card__img card__summary card__text';
+
+    &__day {
+      writing-mode: vertical-rl;
+    }
   }
 
   &__day {
     background-color: $secondaryDark;
     color: $whiteColor;
-    padding: 1em;
+    font-size: 4rem;
+    grid-area: card__day;
+    margin: 0;
+    // padding: 1rem;
     text-align: center;
+
+    @include atLarge {
+      background-color: transparent;
+    }
   }
 
   &__img {
-    width: 100%;
+    align-self: center;
+    grid-area: card__img;
+    justify-self: center;
+    width: 30vw;
+  }
+  &__activity {
+    align-self: center;
+    font-size: 3rem;
+    grid-area: card__activity;
+    justify-self: center;
+    margin: 0;
+    // padding: 1rem;
+  }
+  &__summary {
+    grid-area: card__summary;
+    padding-inline: 1rem;
+  }
+  &__text {
+    grid-area: card__text;
+    padding-inline: 1rem;
+  }
+  ul {
+    list-style-type: none;
   }
 }
