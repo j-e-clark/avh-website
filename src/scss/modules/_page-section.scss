@@ -20,4 +20,12 @@
       padding: 0 2em;
     }
   }
+  .dimensions {
+    list-style: none;
+    padding: 0px;
+
+    & > li:nth-child(3) {
+      padding-top: 0.5em;
+    }
+  }
 }
