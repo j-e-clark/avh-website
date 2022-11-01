@@ -9,7 +9,7 @@
     "label": "Activities",
     "url": "/activities/",
     "highlight": false,
-    "disable": false
+    "disable": true
   },
   {
     "label": "For Hire",
