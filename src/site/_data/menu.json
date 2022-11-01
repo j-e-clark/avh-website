@@ -2,31 +2,37 @@
   {
     "label": "Home",
     "url": "/",
-    "highlight": false
+    "highlight": false,
+    "disable": false
   },
   {
     "label": "Activities",
     "url": "/activities/",
-    "highlight": false
+    "highlight": false,
+    "disable": false
   },
   {
     "label": "For Hire",
     "url": "/forhire/",
-    "highlight": false
+    "highlight": false,
+    "disable": false
   },
   {
     "label": "Information",
     "url": "/information/",
-    "highlight": false
+    "highlight": false,
+    "disable": false
   },
   {
     "label": "Links",
     "url": "/links/",
-    "highlight": false
+    "highlight": false,
+    "disable": false
   },
   {
     "label": "Contacts",
     "url": "/contact/",
-    "highlight": true
+    "highlight": true,
+    "disable": false
   }
 ]
