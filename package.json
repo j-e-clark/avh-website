@@ -24,6 +24,6 @@
     "gulp-sourcemaps": "^3.0.0",
     "postcss": "^8.4.20",
     "romans": "^2.0.8",
-    "sass": "^1.56.2"
+    "sass": "^1.57.1"
   }
 }
