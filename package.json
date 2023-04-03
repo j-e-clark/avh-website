@@ -13,10 +13,10 @@
   "author": "James Clark",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy": "^2.0.1",
     "@ampproject/eleventy-plugin-amp": "^0.5.8",
-    "autoprefixer": "^10.4.13",
-    "cssnano": "^5.1.15",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.0",
     "dotenv": "^16.0.3",
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.1",
@@ -24,6 +24,6 @@
     "gulp-sourcemaps": "^3.0.0",
     "postcss": "^8.4.21",
     "romans": "^2.0.8",
-    "sass": "^1.58.3"
+    "sass": "^1.60.0"
   }
 }
