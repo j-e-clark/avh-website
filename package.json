@@ -17,13 +17,13 @@
     "@ampproject/eleventy-plugin-amp": "^0.5.8",
     "autoprefixer": "^10.4.14",
     "cssnano": "^6.0.1",
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.1.4",
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
-    "postcss": "^8.4.23",
+    "postcss": "^8.4.24",
     "romans": "^2.0.8",
-    "sass": "^1.62.1"
+    "sass": "^1.63.1"
   }
 }
