@@ -1,0 +1,33 @@
+table {
+  border: 3px solid $secondaryDark;
+  border-collapse: collapse;
+  // table-layout: fixed;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid $secondaryDark;
+  padding: 0.5em;
+}
+th[scope='row'] {
+  text-align: left;
+}
+td {
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: $secondaryLight;
+}
+
+.table__charges {
+  th:nth-child(1) {
+    max-width: 50%;
+  }
+
+  th:nth-child(2),
+  th:nth-child(3) {
+    width: auto;
+  }
+}
