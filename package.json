@@ -15,15 +15,15 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@ampproject/eleventy-plugin-amp": "^0.5.8",
-    "autoprefixer": "^10.4.19",
-    "cssnano": "^7.0.1",
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.5",
     "dotenv": "^16.4.5",
     "gulp": "^5.0.0",
     "gulp-postcss": "^10.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
-    "postcss": "^8.4.38",
-    "romans": "^2.0.15",
-    "sass": "^1.77.0"
+    "postcss": "^8.4.41",
+    "romans": "^2.0.16",
+    "sass": "^1.77.8"
   }
 }
