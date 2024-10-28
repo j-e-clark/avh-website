@@ -1,22 +1,25 @@
+@use "../base/mixins";
+@use "../base/variables";
+
 .page-section {
   h1 {
-    color: $secondaryDark;
+    color: variables.$secondaryDark;
     font-size: 2em;
     font-weight: 700;
     text-align: center;
-    @include atMedium {
+    @include mixins.atMedium {
       font-size: 4.5em;
     }
   }
   a {
-    color: $primaryDark;
+    color: variables.$primaryDark;
   }
   &__content {
     align-items: center;
     font-size: 1.2rem;
     margin: 1em 0;
     padding: 0 0.5em;
-    @include atMedium {
+    @include mixins.atMedium {
       padding: 0 2em;
     }
   }

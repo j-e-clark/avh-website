@@ -1,3 +1,6 @@
+@use "../base/mixins";
+@use "../base/variables";
+
 .cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -5,7 +8,7 @@
 }
 
 .card {
-  border: solid 2px $blackColor;
+  border: solid 2px variables.$blackColor;
   border-radius: 1rem;
   display: grid;
   gap: 1rem;
@@ -16,11 +19,11 @@
     'card__text card__text';
   overflow: hidden;
 
-  @include atLarge {
+  @include mixins.atLarge {
     background-image: linear-gradient(
       to right,
-      $secondaryDark,
-      $whiteColor 50%
+      variables.$secondaryDark,
+      variables.$whiteColor 50%
     );
 
     grid-template-areas:
@@ -33,15 +36,15 @@
   }
 
   &__day {
-    background-color: $secondaryDark;
-    color: $whiteColor;
+    background-color: variables.$secondaryDark;
+    color: variables.$whiteColor;
     font-size: 4rem;
     grid-area: card__day;
     margin: 0;
     // padding: 1rem;
     text-align: center;
 
-    @include atLarge {
+    @include mixins.atLarge {
       background-color: transparent;
     }
   }

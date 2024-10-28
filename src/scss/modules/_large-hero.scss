@@ -1,3 +1,6 @@
+@use "../base/mixins";
+@use "../base/variables";
+
 .large-hero {
   position: relative;
   &__img {
@@ -5,7 +8,7 @@
   }
   &__headline {
     bottom: 0;
-    color: $primaryDark;
+    color: variables.$primaryDark;
     font-size: 2em;
     margin: 0;
     padding-bottom: 1.5em;
@@ -13,13 +16,13 @@
     position: absolute;
     right: 0;
     text-shadow: 2px 2px 4px white;
-    @include atSmall {
+    @include mixins.atSmall {
       font-size: 3em;
     }
   }
   &__sub {
     bottom: 0;
-    color: $secondaryLight;
+    color: variables.$secondaryLight;
     font-size: 1em;
     margin: 0;
     padding-bottom: 0.5em;
@@ -28,7 +31,7 @@
     right: 0;
     text-align: right;
     text-shadow: 2px 2px 2px black;
-    @include atSmall {
+    @include mixins.atSmall {
       font-size: 1.5em;
       padding-bottom: 1em;
     }

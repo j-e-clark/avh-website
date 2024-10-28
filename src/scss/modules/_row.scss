@@ -1,15 +1,17 @@
+@use "../base/mixins";
+
 .row {
   align-items: center;
   display: grid;
   font-size: 1.2rem;
   margin: 1em 0;
-  @include atMedium {
+  @include mixins.atMedium {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   &__col {
     padding: 0 0.5em;
-    @include atMedium {
+    @include mixins.atMedium {
       padding: 0 2em;
     }
   }
