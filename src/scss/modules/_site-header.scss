@@ -1,6 +1,8 @@
+@use "../base/variables";
+
 .site-header {
-  background: $tertiaryColor; /* Old browsers */
-  background: linear-gradient($tertiaryLight, $tertiaryColor);
+  background: variables.$tertiaryColor; /* Old browsers */
+  background: linear-gradient(variables.$tertiaryLight, variables.$tertiaryColor);
 
   &__logo {
     amp-img {

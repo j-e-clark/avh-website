@@ -1,3 +1,5 @@
+@use "../base/variables";
+
 amp-consent {
-  background: rgba($tertiaryLight, 0.9);
+  background: rgba(variables.$tertiaryLight, 0.9);
 }

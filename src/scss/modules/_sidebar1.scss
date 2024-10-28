@@ -1,6 +1,8 @@
+@use "../base/variables";
+
 #sidebar1 {
-  background: $tertiaryDark;
-  background: linear-gradient($tertiaryDark 20%, $tertiaryColor 80%);
+  background: variables.$tertiaryDark;
+  background: linear-gradient(variables.$tertiaryDark 20%, variables.$tertiaryColor 80%);
   text-align: right;
   width: 100%;
 
@@ -13,8 +15,8 @@
   }
 
   ul {
-    background: $tertiaryColor;
-    background: linear-gradient($tertiaryLight, $tertiaryColor);
+    background: variables.$tertiaryColor;
+    background: linear-gradient(variables.$tertiaryLight, variables.$tertiaryColor);
     font-size: 1.5em;
     list-style: none;
     margin: 0;
@@ -22,8 +24,8 @@
   }
 
   li {
-    border-bottom: 2px solid $tertiaryDark;
-    color: $secondaryDark;
+    border-bottom: 2px solid variables.$tertiaryDark;
+    color: variables.$secondaryDark;
     text-align: center;
     padding: 1em;
 

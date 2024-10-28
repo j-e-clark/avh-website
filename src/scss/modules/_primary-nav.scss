@@ -1,18 +1,21 @@
+@use "../base/mixins";
+@use "../base/variables";
+
 .primary-nav {
   align-items: center;
   display: flex;
   .primary-nav__menu {
     display: none;
     list-style: none;
-    @include atLarge {
+    @include mixins.atLarge {
       display: flex;
     }
   }
   li {
-    background-color: rgba($whiteColor, 0.75);
+    background-color: rgba(variables.$whiteColor, 0.75);
     border-radius: 0.25em;
-    box-shadow: 0.1em 0.1em rgba($blackColor, 0.15);
-    color: $secondaryDark;
+    box-shadow: 0.1em 0.1em rgba(variables.$blackColor, 0.15);
+    color: variables.$secondaryDark;
     margin: 0 0.25em;
     padding: 0.25em 0.5em;
   }
@@ -27,12 +30,12 @@
     font-size: 2em;
     margin: 0 0.25em;
     padding-bottom: 0.25em;
-    @include atMedium {
+    @include mixins.atMedium {
       font-size: 3em;
       margin: 0 0.5em;
     }
 
-    @include atLarge {
+    @include mixins.atLarge {
       display: none;
     }
   }

@@ -1,15 +1,18 @@
+@use "../base/mixins";
+@use "../base/variables";
+
 .covid-status {
-  background-color: $whiteColor;
-  border: 2px solid $secondaryColor;
+  background-color: variables.$whiteColor;
+  border: 2px solid variables.$secondaryColor;
   border-radius: 1em;
-  color: $secondaryDark;
+  color: variables.$secondaryDark;
   display: inline-block;
   float: right;
   font-size: 0.8em;
   margin: 0.5em;
   padding: 0.12em 0.25em;
   position: relative;
-  @include atMedium {
+  @include mixins.atMedium {
     font-size: 1em;
     padding: 0.25em 0.5em;
   }
@@ -28,8 +31,8 @@
   }
 
   &:before {
-    background-color: $whiteColor;
-    border: 2px solid $secondaryColor;
+    background-color: variables.$whiteColor;
+    border: 2px solid variables.$secondaryColor;
     border-radius: 1em;
     content: attr(data-text);
     display: none;
