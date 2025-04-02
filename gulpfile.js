@@ -8,7 +8,7 @@ const sourcemaps = require('gulp-sourcemaps');
 function cssTask() {
   return src('./src/scss/main.scss', { allowEmpty: true })
     .pipe(sourcemaps.init())
-    .pipe(sass({ outputStyle: 'compressed' }))
+    .pipe(sass({ style: 'compressed' }))
     .on('error', sass.logError)
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(sourcemaps.write('.'))
