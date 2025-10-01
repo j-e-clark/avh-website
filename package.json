@@ -13,17 +13,17 @@
   "author": "James Clark",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.0",
+    "@11ty/eleventy": "^3.1.2",
     "@ampproject/eleventy-plugin-amp": "^0.5.8",
     "autoprefixer": "^10.4.21",
-    "cssnano": "^7.0.7",
+    "cssnano": "^7.1.1",
     "dotenv": "^16.5.0",
-    "gulp": "^5.0.0",
+    "gulp": "^5.0.1",
     "gulp-postcss": "^10.0.0",
     "gulp-sass": "^6.0.1",
     "gulp-sourcemaps": "^3.0.0",
-    "postcss": "^8.5.3",
-    "romans": "^3.0.0",
-    "sass": "^1.89.0"
+    "postcss": "^8.5.6",
+    "romans": "^3.1.0",
+    "sass": "^1.93.2"
   }
 }
