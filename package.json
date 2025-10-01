@@ -17,7 +17,7 @@
     "@ampproject/eleventy-plugin-amp": "^0.5.8",
     "autoprefixer": "^10.4.21",
     "cssnano": "^7.1.1",
-    "dotenv": "^16.5.0",
+    "dotenv": "^17.2.3",
     "gulp": "^5.0.1",
     "gulp-postcss": "^10.0.0",
     "gulp-sass": "^6.0.1",
