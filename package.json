@@ -15,21 +15,22 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
     "@ampproject/eleventy-plugin-amp": "^0.5.8",
-    "autoprefixer": "^10.5.4",
-    "cssnano": "^9.0.2",
-    "dotenv": "^17.4.2",
+    "autoprefixer": "^10.6.1",
+    "cssnano": "^9.3.2",
+    "dotenv": "^18.0.6",
     "gulp": "^5.0.1",
     "gulp-postcss": "^10.0.0",
     "gulp-sass": "^6.0.1",
     "gulp-sourcemaps": "^3.0.0",
-    "postcss": "^8.5.26",
+    "postcss": "^8.5.29",
     "romans": "^3.1.0",
-    "sass": "^1.103.1"
+    "sass": "^1.105.1"
   },
   "allowScripts": {
     "eleventy@1.0.6": true,
     "es5-ext@0.10.64": true,
     "fsevents@2.3.2": true,
-    "sharp@0.30.7": true
+    "sharp@0.30.7": true,
+    "@parcel/watcher@2.6.0": true
   }
 }
